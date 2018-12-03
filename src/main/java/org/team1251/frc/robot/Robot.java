@@ -2,6 +2,7 @@ package org.team1251.frc.robot;
 
 import edu.wpi.first.wpilibj.IterativeRobot;
 import edu.wpi.first.wpilibj.command.Scheduler;
+import org.team1251.frc.robot.robotMap.DeviceManager;
 
 /**
  * The VM is configured to automatically run this class, and to call the
@@ -13,13 +14,14 @@ import edu.wpi.first.wpilibj.command.Scheduler;
 public class Robot extends IterativeRobot {
 
 
+    private DeviceManager deviceManager;
+
     /**
      * This function is run when the robot is first started up and should be
      * used for any initialization code.
      */
     public void robotInit() {
-
-
+        deviceManager = new DeviceManager();
     }
 
 
